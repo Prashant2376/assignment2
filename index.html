@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="light-mode">
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">Prashant Rai</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="background-animation">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+      </div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="container home-container">
+        <div class="home-content">
+          <h1 class="animate-text">Hi, I'm Prashant</h1>
+          <h2 class="role animate-text">Software Developer</h2>
+          <p class="description animate-text">
+            Passionate about building scalable applications and solving complex
+            problems. Experienced in C++, SQL, JavaScript and frontend
+            technologies and backend technologies like express.js.
+          </p>
+          <div class="cta-buttons animate-up">
+            <a
+              href="assets/resume.pdf"
+              target="_blank"
+              class="btn download-btn"
+            >
+              <i class="fas fa-download"></i> My Resume
+            </a>
+            <div class="social-links">
+              <a
+                href="https://github.com/Prashant2376?tab=repositories"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/prashantln2376/"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="home-image animate-fade-in">
+          <img src="assets/profile.jpg" alt="Prashant's Photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h1>About Me</h1>
+        <p class="subtitle">Get to know me better</p>
+
+        <div class="tabs">
+          <input type="radio" id="personal" name="tabs" checked />
+          <input type="radio" id="education" name="tabs" />
+          <input type="radio" id="tech" name="tabs" />
+
+          <div class="tabs-labels">
+            <label for="personal" class="tab-label">
+              <i class="fas fa-user"></i> Personal Info
+            </label>
+            <label for="education" class="tab-label">
+              <i class="fas fa-graduation-cap"></i> Education
+            </label>
+            <label for="tech" class="tab-label">
+              <i class="fas fa-code"></i> Tech Stack
+            </label>
+          </div>
+
+          <div class="tab-content">
+            <!-- Personal Info Content -->
+            <div class="personal-content" id="personal-content">
+              <div class="info-grid">
+                <div class="info-card">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3>Birth Place</h3>
+                  <p>Gorakhpur, Uttar Pradesh</p>
+                </div>
+                <div class="info-card">
+                  <i class="fas fa-id-card"></i>
+                  <h3>Student ID</h3>
+                  <p>21BCS2376</p>
+                </div>
+                <div class="info-card">
+                  <i class="fas fa-university"></i>
+                  <h3>University</h3>
+                  <p>Chandigarh University</p>
+                </div>
+              </div>
+              <div class="about-description">
+                <p>
+                  Hello! I'm a passionate software developer pursuing my
+                  Bachelor's in Computer Science Engineering. I specialize in
+                  building scalable applications and solving complex problems
+                  using modern technologies.
+                </p>
+                <p>
+                  My technical journey has equipped me with strong
+                  problem-solving skills and a deep understanding of software
+                  development principles. I'm always eager to learn new
+                  technologies and take on challenging projects.
+                </p>
+              </div>
+            </div>
+
+            <!-- Education Content -->
+            <div class="education-content" id="education-content">
+              <div class="education-timeline">
+                <div class="education-card">
+                  <div class="edu-header">
+                    <h3>Bachelors of Engineering</h3>
+                    <span class="year">2021-2025</span>
+                  </div>
+                  <h4>Chandigarh University</h4>
+                  <p>Mohali, Punjab</p>
+                  <p class="uid">UID: 21BCS2376</p>
+                </div>
+
+                <div class="education-card">
+                  <div class="edu-header">
+                    <h3>Intermediate (XII)</h3>
+                    <span class="year">2020</span>
+                  </div>
+                  <h4>Surmount International School</h4>
+                  <p>Gorakhpur, Uttar Pradesh</p>
+                  <p class="percentage">Percentage: 85.4%</p>
+                </div>
+
+                <div class="education-card">
+                  <div class="edu-header">
+                    <h3>Matriculation (X)</h3>
+                    <span class="year">2018</span>
+                  </div>
+                  <h4>Surmount International School</h4>
+                  <p>Gorakhpur, Uttar Pradesh</p>
+                  <p class="percentage">Percentage: 86%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack Content -->
+            <div class="tech-content" id="tech-content">
+              <div class="tech-grid">
+                <div class="tech-card">
+                  <i class="fab fa-react"></i>
+                  <h3>React</h3>
+                </div>
+                <div class="tech-card">
+                  <i class="fab fa-js"></i>
+                  <h3>JavaScript</h3>
+                </div>
+                <div class="tech-card">
+                  <i class="fab fa-html5"></i>
+                  <h3>HTML5</h3>
+                </div>
+                <div class="tech-card">
+                  <i class="fab fa-css3-alt"></i>
+                  <h3>CSS3</h3>
+                </div>
+                <div class="tech-card">
+                  <i class="fab fa-python"></i>
+                  <h3>Express.js</h3>
+                </div>
+                <div class="tech-card">
+                  <i class="fas fa-database"></i>
+                  <h3>SQL</h3>
+                </div>
+                <div class="tech-card">
+                  <i class="fas fa-code"></i>
+                  <h3>DSA</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <!-- Frontend Development -->
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React.js</h3>
+                <p>
+                  Component-based UI development, state management, and modern
+                  React practices
+                </p>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML/CSS</h3>
+                <p>Responsive design, CSS frameworks, and modern layouts</p>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, and async programming</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Express.js and Node.js</h3>
+                <p>
+                  Web framework for building robust APIs and server-side
+                  applications.
+                </p>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+                <p>Database design, queries, and optimization</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming Concepts -->
+          <div class="skill-category">
+            <h3>Programming Concepts</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>DSA</h3>
+                <p>Data structures, algorithms, and problem-solving</p>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>System Design</h3>
+                <p>I will be learning it next time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <!-- Certifications Section -->
+          <div class="skill-category">
+            <h3>Certifications</h3>
+            <div class="certification-list">
+              <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <span>Certificate in C++ — Coding Ninjas</span>
+              </div>
+              <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <span>Certificate in Discrete Mathematics — NPTEL</span>
+              </div>
+              <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <span
+                  >Probability and Statistics, Internet of Things — NPTEL</span
+                >
+              </div>
+              <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <span
+                  >Data Analytics and Visualization on Forage — Accenture</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h1>Featured Projects</h1>
+        <p class="subtitle">Some of my recent work</p>
+        <div class="projects-grid">
+          <!-- Atomic Blog Project -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>The Atomic-Blog Website</h3>
+              <p class="project-description">
+                A modern blog platform featuring a clean interface with post
+                management, search functionality, and dark mode. Implemented
+                with 30 dynamic blog posts, search capabilities, and a
+                user-friendly interface for post creation and archiving.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React.js</span>
+              </div>
+              <div class="project-features">
+                <ul>
+                  <li>30 atomic posts management</li>
+                  <li>Advanced search functionality</li>
+                  <li>Post archiving system</li>
+                  <li>Dark mode toggle</li>
+                  <li>Dynamic content with Faker.js</li>
+                  <li>Clean and modern UI</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn project-btn">
+                  <i class="fas fa-eye"></i> Live Demo
+                </a>
+                <a href="#" class="btn project-btn">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Online Voting System Project -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Online Voting System</h3>
+              <p class="project-description">
+                Developed a Python voting application facilitating user
+                registration, vote casting, and vote tallying with efficient
+                party-specific results. Used socket programming and a secure
+                server that only allows clients with authentic names and
+                passwords to cast votes.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Socket Programming</span>
+                <span class="tech-tag">Authentication</span>
+              </div>
+              <div class="project-features">
+                <ul>
+                  <li>User registration</li>
+                  <li>Secure vote casting</li>
+                  <li>Vote tallying</li>
+                  <li>Party-specific results</li>
+                  <li>Authentication system</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn project-btn">
+                  <i class="fas fa-eye"></i> Live Demo
+                </a>
+                <a href="#" class="btn project-btn">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <!-- Previous two project cards remain unchanged -->
+
+          <!-- Pizza Delivery Website Project -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Pizza Delivery Website</h3>
+              <p class="project-description">
+                A comprehensive pizza delivery platform with user
+                authentication, interactive ordering system, and secure payment
+                integration. Features a dynamic cart system and real-time order
+                tracking for an enhanced user experience.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React.js</span>
+              </div>
+              <div class="project-features">
+                <ul>
+                  <li>User authentication (Sign up/Login)</li>
+                  <li>Interactive pizza customization</li>
+                  <li>Dynamic shopping cart</li>
+                  <li>Multiple payment methods</li>
+                  <li>Order tracking system</li>
+                  <li>Responsive design</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn project-btn">
+                  <i class="fas fa-eye"></i> Live Demo
+                </a>
+                <a href="#" class="btn project-btn">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Reviewer Project -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Code Reviewer</h3>
+              <p class="project-description">
+                Developed an AI-powered code reviewer using Node.js and Google
+                Generative AI’s Gemini model to analyze, review, and improve
+                code quality. Designed the system to detect potential bugs, and
+                logical flaws while promoting maintainable and readable code.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <div class="project-features">
+                <ul>
+                  <li>AI-powered code review and analysis</li>
+                  <li>Bug and logical flaw detection</li>
+                  <li>Promotes maintainable and readable code</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <div class="container">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+          <!-- Blog 1 -->
+          <article class="blog-card">
+            <div class="blog-content">
+              <div class="blog-date">March 15, 2024</div>
+              <h3>Modern Web Development Trends</h3>
+              <p class="blog-excerpt">
+                Exploring the latest trends in web development, including new
+                frameworks, tools, and best practices for building modern web
+                applications.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">Web Dev</span>
+                <span class="blog-tag">React</span>
+                <span class="blog-tag">Trends</span>
+              </div>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Blog 2 -->
+          <article class="blog-card">
+            <div class="blog-content">
+              <div class="blog-date">March 10, 2024</div>
+              <h3>Getting Started with React</h3>
+              <p class="blog-excerpt">
+                A comprehensive guide to starting your journey with React.js,
+                from setup to advanced concepts and best practices.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">React</span>
+                <span class="blog-tag">Tutorial</span>
+                <span class="blog-tag">JavaScript</span>
+              </div>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Blog 3 -->
+          <article class="blog-card">
+            <div class="blog-content">
+              <div class="blog-date">March 5, 2024</div>
+              <h3>CSS Tips and Tricks</h3>
+              <p class="blog-excerpt">
+                Discover powerful CSS techniques that can enhance your web
+                designs and improve user experience in modern websites.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">CSS</span>
+                <span class="blog-tag">Design</span>
+                <span class="blog-tag">Tips</span>
+              </div>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Blog 4 -->
+          <article class="blog-card">
+            <div class="blog-content">
+              <div class="blog-date">March 1, 2024</div>
+              <h3>Python for Data Science</h3>
+              <p class="blog-excerpt">
+                Essential Python libraries and techniques for data analysis,
+                visualization, and machine learning applications.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">Python</span>
+                <span class="blog-tag">Data Science</span>
+                <span class="blog-tag">ML</span>
+              </div>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Blog 5 -->
+          <article class="blog-card">
+            <div class="blog-content">
+              <div class="blog-date">February 25, 2024</div>
+              <h3>DevOps Best Practices</h3>
+              <p class="blog-excerpt">
+                Understanding continuous integration, deployment, and modern
+                DevOps practices for efficient software delivery.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">DevOps</span>
+                <span class="blog-tag">CI/CD</span>
+                <span class="blog-tag">Tools</span>
+              </div>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Blog 6 -->
+          <article class="blog-card">
+            <div class="blog-content">
+              <div class="blog-date">February 20, 2024</div>
+              <h3>Mobile App Development</h3>
+              <p class="blog-excerpt">
+                Exploring modern approaches to building cross-platform mobile
+                applications using React Native and Flutter.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">Mobile</span>
+                <span class="blog-tag">React Native</span>
+                <span class="blog-tag">Flutter</span>
+              </div>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Prashantportfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
